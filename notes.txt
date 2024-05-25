@@ -1,0 +1,16 @@
+# Sanal ortam oluşturma
+python -m venv myenv
+
+# Sanal ortamı etkinleştirme
+source myenv/bin/activate  # macOS/Linux
+# myenv\Scripts\activate    # Windows
+
+# Gerekli kütüphaneleri yükleme
+pip install -r requirements.txt
+
+
+## kodu çalıştırmak için ### 
+
+bunları yaptıktan sonra : python chatbot_app.py yazacaksın 
+
+

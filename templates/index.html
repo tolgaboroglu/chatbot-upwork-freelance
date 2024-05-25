@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elif Selin Akgül - Avukat Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="/static/profile.jpg" alt="Profil Resmi">
+                <h2>Elif Selin Akgül</h2>
+                <p>Avukat</p>
+            </div>
+            <div class="rooms">
+                <h3>Bilgiler</h3>
+                <ul>
+                    <li class="active">Katip</li>
+                    <li>Hukuk</li>
+                    <li>Danışmanlık</li>
+                    <li>İletişim</li>
+                </ul>
+            </div>
+        </div>
+        <div class="chat-main">
+            <div class="chat-header">
+                <h2>KATIP</h2>
+                <div class="logout">
+                    Çıkış Yap
+                </div>
+            </div>
+            <div id="chatbox" class="chatbox">
+                <div id="chat-log" class="chat-log">
+                    <!-- Mesajlar buraya eklenecek -->
+                </div>
+            </div>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="user-input" placeholder="Mesajınızı yazın..." autocomplete="off">
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('chat-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var userInput = document.getElementById('user-input').value;
+            if (userInput.trim() !== '') {
+                var chatLog = document.getElementById('chat-log');
+                var userMessage = document.createElement('div');
+                userMessage.className = 'user-message';
+                userMessage.textContent = 'Soru: ' + userInput;
+                chatLog.appendChild(userMessage);
+
+                fetch('/get_response', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: 'user_input=' + encodeURIComponent(userInput)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var botMessage = document.createElement('div');
+                    botMessage.className = 'bot-message';
+                    botMessage.textContent = 'Elif Selin Akgül yanıtı: ' + data.response;
+                    chatLog.appendChild(botMessage);
+                    chatLog.scrollTop = chatLog.scrollHeight;
+                });
+
+                document.getElementById('user-input').value = '';
+            }
+        });
+    </script>
+</body>
+</html>
