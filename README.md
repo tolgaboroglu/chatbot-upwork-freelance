@@ -1,3 +1,5 @@
+# Avukat Destek Chatbot Projesi
+
 Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek ve Bert Türkçe modeli ile eğitmek amacıyla gerçekleştirilmiştir. Bu sayede avukat, davaları hakkında daha hızlı ve verimli bir şekilde bilgi alabilecek, ayrıca davaların son durumu hakkında güncel bilgilere anında erişim sağlayabilecektir. Çalışmanın temel adımları aşağıda detaylandırılmıştır:
 
 1. **Veri Toplama ve İşleme:** Dava dosyalarındaki metin verileri toplandı ve temizlendi. Bu aşamada, gereksiz bilgilerin filtrelenmesi ve metinlerin uygun formatta işlenmesi sağlandı.
@@ -12,4 +14,4 @@ Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek v
 
 Sonuç olarak, bu proje avukatların dava süreçlerini daha etkin yönetmelerine ve bilgiye hızlı bir şekilde erişmelerine olanak tanır. Bu da avukatların iş yükünü azaltarak, daha verimli çalışmalarını sağlar.
 
-![Uploading image.png…]()
+![Proje Akışı]([project_flowchart.png](https://www.mgc.com.tr/wp-content/uploads/2022/06/avukat-nedir-tr-mgc-legal.jpg))
