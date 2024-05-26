@@ -14,4 +14,4 @@ Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek v
 
 Sonuç olarak, bu proje avukatların dava süreçlerini daha etkin yönetmelerine ve bilgiye hızlı bir şekilde erişmelerine olanak tanır. Bu da avukatların iş yükünü azaltarak, daha verimli çalışmalarını sağlar.
 
-![Proje Akışı]([project_flowchart.png](https://www.mgc.com.tr/wp-content/uploads/2022/06/avukat-nedir-tr-mgc-legal.jpg))
+![Proje Akışı]([[project_flowchart.png](https://www.mgc.com.tr/wp-content/uploads/2022/06/avukat-nedir-tr-mgc-legal.jpg](https://github.com/tolgaboroglu/case-files-chatbot/blob/main/static/background.jpg?raw=true)))
