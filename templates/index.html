@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elif Selin Akgül - Avukat Chatbot</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>Tolga Boroglu - Katipedia</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
     <div class="chat-container">
         <div class="sidebar">
             <div class="profile">
-                <img src="/static/profile.jpg" alt="Profil Resmi">
-                <h2>Elif Selin Akgül</h2>
+                <img src="static/images.png" alt="Profil Resmi">
+                <h2>Tolga Boroglu</h2>
                 <p>Avukat</p>
             </div>
             <div class="rooms">
@@ -26,7 +26,7 @@
         </div>
         <div class="chat-main">
             <div class="chat-header">
-                <h2>KATIP</h2>
+                <h2>KATIPEDIA</h2>
                 <div class="logout">
                     Çıkış Yap
                 </div>
@@ -57,15 +57,15 @@
                 fetch('/get_response', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
+                        'Content-Type': 'application/json'
                     },
-                    body: 'user_input=' + encodeURIComponent(userInput)
+                    body: JSON.stringify({ user_input: userInput })
                 })
                 .then(response => response.json())
                 .then(data => {
                     var botMessage = document.createElement('div');
                     botMessage.className = 'bot-message';
-                    botMessage.textContent = 'Elif Selin Akgül yanıtı: ' + data.response;
+                    botMessage.textContent = 'Katipedianın yanıtı: ' + data.response;
                     chatLog.appendChild(botMessage);
                     chatLog.scrollTop = chatLog.scrollHeight;
                 });

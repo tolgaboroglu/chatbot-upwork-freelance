@@ -13,4 +13,10 @@ pip install -r requirements.txt
 
 bunları yaptıktan sonra : python chatbot_app.py yazacaksın 
 
+ngrok u install edip authentication ı terminale yapıştırmalısın
+
+ÖNEMLİ !!! 
+
+eğer hata alırsan dosya yollarını tekrardan kontrol etmelisin sonrasında düzelir.
+
 
