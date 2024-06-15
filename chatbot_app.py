@@ -5,15 +5,18 @@ from pyngrok import ngrok
 
 app = Flask(__name__)
 
-# Load the CSV file
-dilekce = pd.read_csv("/Users/tb/Documents/GitHub/case-files-chatbot/dilekcelerin.csv")
+# CSV dosyasını yükleme
+dilekce = pd.read_csv("dilekcelerin.csv")
 
-# Turkish QA model
+# Türkçe soru cevaplama modeli
 model_name = "savasy/bert-base-turkish-squad"
 qa_pipeline = pipeline("question-answering", model=model_name)
 
+# Rastgele 10 bağlam seçip birleştiriyoruz ve sabitliyoruz
+context = " ".join(dilekce['IctihatMetni'].dropna().astype(str).sample(n=10).tolist())
+
 def answer_question(question, context):
-    result = qa_pipeline(question=question, context=context, max_answer_len=100)
+    result = qa_pipeline(question=question, context=context, max_answer_len=500, min_answer_len=250)
     return result['answer']
 
 @app.route("/", methods=["GET", "POST"])
@@ -22,24 +25,18 @@ def index():
 
 @app.route("/get_response", methods=["POST"])
 def get_response():
-    try:
-        data = request.get_json()
-        if 'user_input' not in data:
-            return jsonify({"response": "No input provided"}), 400
+    data = request.get_json()
+    if 'user_input' in data:
         user_input = data['user_input']
-        context = " ".join(dilekce['IctihatMetni'].dropna().astype(str).sample(n=5).tolist())
-        print("Context:", context)  # Debug print to check the context
         response = answer_question(user_input, context)
-        print("Response:", response)  # Debug print to check the response
         return jsonify({"response": response})
-    except Exception as e:
-        print("Error:", str(e))  # Print the error message for debugging
-        return jsonify({"response": "An error occurred. Please try again later."}), 500
+    else:
+        return jsonify({"error": "User input not found"}), 400
 
 if __name__ == '__main__':
-    # Start the ngrok tunnel
+    # Ngrok tünelini başlatma ve URL'yi alma
     public_url = ngrok.connect(5000)
-    print(f"Flask app is accessible at this URL: {public_url}")
+    print(f"Flask uygulamasına erişmek için bu URL'yi kullanın: {public_url}")
 
-    # Start the Flask app
+    # Flask uygulamasını başlatma
     app.run(port=5000)
