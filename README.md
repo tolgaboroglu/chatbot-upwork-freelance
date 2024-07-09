@@ -14,6 +14,8 @@ Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek v
 
 Sonuç olarak, bu proje avukatların dava süreçlerini daha etkin yönetmelerine ve bilgiye hızlı bir şekilde erişmelerine olanak tanır. Bu da avukatların iş yükünü azaltarak, daha verimli çalışmalarını sağlar.
 
+![Müşterinin Proje Sonundaki Düşüncesi](https://github.com/tolgaboroglu/chatbot-upwork-freelance/blob/main/1718366774315%20(1).jpeg)
+
 
 
 
