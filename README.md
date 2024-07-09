@@ -1,4 +1,4 @@
-# Avukat Destek Chatbot Projesi
+# Avukat Destek Chatbot Proje Demosu 
 
 Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek ve Bert Türkçe modeli ile eğitmek amacıyla gerçekleştirilmiştir. Bu sayede avukat, davaları hakkında daha hızlı ve verimli bir şekilde bilgi alabilecek, ayrıca davaların son durumu hakkında güncel bilgilere anında erişim sağlayabilecektir. Çalışmanın temel adımları aşağıda detaylandırılmıştır:
 
@@ -13,4 +13,7 @@ Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek v
 5. **Gerçek Zamanlı Güncellemeler:** Chatbot, dava dosyalarındaki güncellemeleri takip ederek avukatlara gerçek zamanlı bilgiler sunar. Bu sayede, avukatlar davaların son durumu hakkında her zaman güncel bilgiye sahip olur.
 
 Sonuç olarak, bu proje avukatların dava süreçlerini daha etkin yönetmelerine ve bilgiye hızlı bir şekilde erişmelerine olanak tanır. Bu da avukatların iş yükünü azaltarak, daha verimli çalışmalarını sağlar.
+
+
+
 
