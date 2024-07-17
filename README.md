@@ -1,20 +1,20 @@
-# Avukat Destek Chatbot Proje Demosu 
+# Lawyer Support Chatbot Project Demo
 
-Bu çalışma, bir avukatın dava dosyalarındaki bilgileri toplamak, işlemek ve Bert Türkçe modeli ile eğitmek amacıyla gerçekleştirilmiştir. Bu sayede avukat, davaları hakkında daha hızlı ve verimli bir şekilde bilgi alabilecek, ayrıca davaların son durumu hakkında güncel bilgilere anında erişim sağlayabilecektir. Çalışmanın temel adımları aşağıda detaylandırılmıştır:
+This project was carried out with the aim of collecting and processing information from a lawyer's case files and training it with the Bert Turkish model. This allows the lawyer to access information about their cases more quickly and efficiently, as well as obtain up-to-date information about the current status of the cases instantly. The basic steps of the study are detailed below:
 
-1. **Veri Toplama ve İşleme:** Dava dosyalarındaki metin verileri toplandı ve temizlendi. Bu aşamada, gereksiz bilgilerin filtrelenmesi ve metinlerin uygun formatta işlenmesi sağlandı.
-  
-2. **Model Eğitimi:** Bert Türkçe modeli, toplanan ve işlenen verilerle eğitildi. Bu süreçte, modelin hukuki terminolojiye ve dava süreçlerine uyum sağlaması için özel eğitim verildi.
-  
-3. **Chatbot Entegrasyonu:** Eğitilen Bert Türkçe modeli, bir chatbot platformuna entegre edildi. Bu chatbot, kullanıcı sorularını anlayıp yanıtlayabilecek şekilde optimize edildi.
-  
-4. **Kullanıcı Arayüzü:** Avukatların kolayca kullanabileceği bir arayüz tasarlandı. Bu arayüz üzerinden avukatlar, dava dosyalarına ilişkin sorularını chatbot'a yöneltebilir ve anında yanıt alabilirler.
-  
-5. **Gerçek Zamanlı Güncellemeler:** Chatbot, dava dosyalarındaki güncellemeleri takip ederek avukatlara gerçek zamanlı bilgiler sunar. Bu sayede, avukatlar davaların son durumu hakkında her zaman güncel bilgiye sahip olur.
+1. **Data Collection and Processing:** Text data from case files was collected and cleaned. During this stage, unnecessary information was filtered out and the texts were processed in the appropriate format.
 
-Sonuç olarak, bu proje avukatların dava süreçlerini daha etkin yönetmelerine ve bilgiye hızlı bir şekilde erişmelerine olanak tanır. Bu da avukatların iş yükünü azaltarak, daha verimli çalışmalarını sağlar.
+2. **Model Training:** The Bert Turkish model was trained with the collected and processed data. In this process, special training was provided to adapt the model to legal terminology and case processes.
 
-# Müşterinin Proje Sonunda Hakkımdaki Geri Bildirimi - Upwork
+3. **Chatbot Integration:** The trained Bert Turkish model was integrated into a chatbot platform. This chatbot was optimized to understand and respond to user questions.
+
+4. **User Interface:** A user-friendly interface was designed for lawyers. Through this interface, lawyers can ask questions related to case files to the chatbot and receive immediate responses.
+
+5. **Real-Time Updates:** The chatbot tracks updates in case files and provides real-time information to lawyers. This ensures that lawyers always have up-to-date information about the status of their cases.
+
+As a result, this project enables lawyers to manage their case processes more effectively and access information quickly. This reduces the lawyers' workload, allowing them to work more efficiently.
+
+# Client Feedback About Me After the Project - Upwork
 ![Müşterinin Proje Sonundaki Düşüncesi](https://github.com/tolgaboroglu/chatbot-upwork-freelance/blob/main/1718366774315%20(1).jpeg)
 
 
