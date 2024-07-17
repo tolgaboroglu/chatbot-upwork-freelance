@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tolga Boroglu - Katip</title>
+    <title>Tolga Boroglu </title>
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
@@ -12,21 +12,21 @@
             <div class="profile">
                 <img src="static/images.png" alt="Profil Resmi">
                 <h2>Tolga Boroglu</h2>
-                <p>Avukat</p>
+                <p>Data Scientist</p>
             </div>
             <div class="rooms">
                 <h3>Bilgiler</h3>
                 <ul>
-                    <li class="active">Katip</li>
-                    <li>Hukuk</li>
-                    <li>Danışmanlık</li>
-                    <li>İletişim</li>
+                    <li class="active">Data.ai</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
                 </ul>
             </div>
         </div>
         <div class="chat-main">
             <div class="chat-header">
-                <h2>KATIP</h2>
+                <h2>Data.ai</h2>
                 <div class="logout">
                     Çıkış Yap
                 </div>
@@ -65,7 +65,7 @@
                 .then(data => {
                     var botMessage = document.createElement('div');
                     botMessage.className = 'bot-message';
-                    botMessage.textContent = 'Katip yanıtı: ' + data.response;
+                    botMessage.textContent = 'Data.ai yanıtı: ' + data.response;
                     chatLog.appendChild(botMessage);
                     chatLog.scrollTop = chatLog.scrollHeight;
                 });

@@ -6,14 +6,14 @@ from pyngrok import ngrok
 app = Flask(__name__)
 
 # CSV dosyasını yükleme
-dilekce = pd.read_csv("dilekcelerin.csv")
+dilekce = pd.read_csv("file.csv")
 
 # Türkçe soru cevaplama modeli
 model_name = "dbmdz/bert-base-turkish-cased"
 qa_pipeline = pipeline("question-answering", model=model_name)
 
 # Rastgele 10 bağlam seçip birleştiriyoruz ve sabitliyoruz
-context = " ".join(dilekce['IctihatMetni'].dropna().astype(str).sample(n=10).tolist())
+context = " ".join(dilekce['target_text'].dropna().astype(str).sample(n=10).tolist())
 
 def complete_sentence(text):
     # Tamamlanmamış cümleleri bul ve tamamla
